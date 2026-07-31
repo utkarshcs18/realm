@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="realm.png" alt="Realm Discord Bot" width="250"/>
+  <img src="realm.png" alt="Realm Discord Bot" width="500"/>
   <h1>Realm — Discord Bot</h1>
 </div>
 
