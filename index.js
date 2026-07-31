@@ -88,7 +88,10 @@ client.musicPlayer.events.on('playerError', (queue, error) => {
   queue.metadata?.channel?.send(`❌ Player error: ${error?.message ?? 'Unknown error'}`).catch(() => null);
 });
 
-
+// Catch core player errors (this prevents the UnhandledEventsWarning)
+client.musicPlayer.on('error', (error) => {
+  console.error('[Music Player Core Error]', error);
+});
 
 const commandFolders = fs.readdirSync(path.join(__dirname, "commands"));
 for (const folder of commandFolders) {
