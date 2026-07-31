@@ -1,42 +1,42 @@
-# 🤖 Realm Bot - Deep Dive Documentation
+#  Realm Bot - Deep Dive Documentation
 
 Welcome to the comprehensive guide for this Discord bot. This document is designed for developers, server owners, or anyone who wants to understand exactly how this bot is built, how it operates under the hood, and what makes it production-ready.
 
 ---
 
-## 🌟 Bot Features (For Owners & Users)
+##  Bot Features (For Owners & Users)
 
 This bot is a fully-featured, multi-purpose powerhouse designed to run your entire Discord server. Here is what it can do for you:
 
-### 🎵 Advanced Music System
+###  Advanced Music System
 Enjoy high-quality, buffer-free music in your voice channels.
 - **Play Anything:** Search and play music seamlessly from YouTube, Spotify, and SoundCloud.
 - **Queue Management:** Queue up multiple songs, skip, pause, resume, and loop tracks or entire playlists.
 - **High Quality:** Uses a dedicated Opus audio encoder for crystal clear audio without lag.
 
-### 🛡️ Moderation Toolkit
+###  Moderation Toolkit
 Keep your server safe and organized with powerful moderation commands.
 - **Kick, Ban, and Mute:** Easily remove or silence problematic users.
 - **Warn System:** Track user infractions securely in the bot's database.
 - **Automod Integration:** Automatically detect and act on bad behavior.
 
-### 📈 Leveling & XP
+###  Leveling & XP
 Engage your community by rewarding activity.
 - **Global XP Tracking:** Users earn experience points for chatting and participating in the server.
 - **Rank Cards:** Users can check their level and rank on the leaderboard.
 
-### 👋 Welcome & Goodbye System
+###  Welcome & Goodbye System
 Make a great first impression on new members.
 - **Custom Welcome Messages:** Automatically greet new users when they join with personalized text and images.
 - **Auto-Roles:** Automatically assign roles to users the moment they verify or join.
 
-### 🛠️ Utility & Misc
+###  Utility & Misc
 - **Server Info & Ping:** Instantly check server stats and bot latency.
 - **Database Driven:** All settings are saved securely, meaning your server configuration is never lost.
 
 ---
 
-## 🏗️ Architecture & Tech Stack
+##  Architecture & Tech Stack
 
 This bot is built using modern JavaScript and follows a highly modular architecture.
 
@@ -55,7 +55,7 @@ The music system is the most complex and robust part of this bot:
 
 ---
 
-## ⚙️ How the Bot Actually Works
+##  How the Bot Actually Works
 
 ### 1. The Entry Point (`index.js`)
 When you run `npm start`, the `index.js` file wakes up. It performs several critical startup tasks:
@@ -96,7 +96,7 @@ When you deploy this bot to a real server host (like Railway, Heroku, or an Ubun
 
 ---
 
-## 📝 Adding Features in the Future
+##  Adding Features in the Future
 
 Because of the modular architecture, expanding the bot is incredibly simple:
 - **Need a new command?** Create a new file in the `commands` folder. Provide the `data` (name and description) and the `execute` function. The handler does the rest.
@@ -106,15 +106,15 @@ This structure ensures the bot remains scalable, maintainable, and easy to read 
 
 ---
 
-## 📜 Full Command List
+##  Full Command List
 
 Below is the complete list of all slash commands currently available in the bot, categorized by their modules:
 
-### 📈 LEVELING
+###  LEVELING
 - **/leaderboard**: Show top leveling users.
 - **/rank**: Show rank and XP.
 
-### 🛡️ MODERATION
+###  MODERATION
 - **/ban**: Ban a user.
 - **/kick**: Kick a user.
 - **/mute**: Timeout a user.
@@ -122,7 +122,7 @@ Below is the complete list of all slash commands currently available in the bot,
 - **/unmute**: Unmute/remove timeout from a user.
 - **/warn**: Warn a user.
 
-### 🎵 MUSIC
+###  MUSIC
 - **/leave**: Make the bot leave the voice channel and clear the queue.
 - **/pause**: Pause the currently playing track.
 - **/play**: Play a song by name or URL (YouTube, Spotify, SoundCloud).
@@ -130,7 +130,7 @@ Below is the complete list of all slash commands currently available in the bot,
 - **/resume**: Resume paused playback.
 - **/skip**: Skip the current track.
 
-### 🛠️ UTILITY
+###  UTILITY
 - **/embed create**: Create a new custom embed template.
 - **/embed edit**: Use the editor to preview and edit an existing embed.
 - **/embed show**: Preview an embed.
