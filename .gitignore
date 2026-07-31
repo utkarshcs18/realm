@@ -1,0 +1,69 @@
+# ─── Dependencies ─────────────────────────────────────────────────────────────
+node_modules/
+
+# ─── Environment / Secrets ────────────────────────────────────────────────────
+# NEVER commit real tokens or connection strings
+.env
+.env.*
+!.env.example
+
+# ─── Runtime Logs ─────────────────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# ─── OS Generated ─────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# ─── Editor / IDE ─────────────────────────────────────────────────────────────
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*.swo
+*~
+
+# ─── Build Output ─────────────────────────────────────────────────────────────
+dist/
+build/
+out/
+
+# ─── Package Manager ──────────────────────────────────────────────────────────
+# Keep package-lock.json for reproducible installs; ignore yarn & pnpm locks
+yarn.lock
+pnpm-lock.yaml
+.pnp
+.pnp.js
+
+# ─── Runtime / Temp Files ─────────────────────────────────────────────────────
+*.pid
+*.seed
+*.pid.lock
+.tmp/
+tmp/
+
+# ─── Coverage / Testing ───────────────────────────────────────────────────────
+coverage/
+.nyc_output/
+*.lcov
+
+# ─── Docker ───────────────────────────────────────────────────────────────────
+# Ignore local override files but keep the main Dockerfile if added later
+docker-compose.override.yml
