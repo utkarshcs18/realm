@@ -159,4 +159,4 @@ Files rotate at **5 MB** with up to 5 retained copies.
 
 ## 📄 License
 
-ISC © Utkarsh
+MIT license
