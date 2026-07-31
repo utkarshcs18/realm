@@ -1,4 +1,7 @@
-# Realm — Discord Bot
+<div align="center">
+  <img src="realm.png" alt="Realm Discord Bot" width="250"/>
+  <h1>Realm — Discord Bot</h1>
+</div>
 
 A production-ready, fully modular Discord bot built with **discord.js v14**, **discord-player v6**, and **MongoDB (Mongoose)**.
 
