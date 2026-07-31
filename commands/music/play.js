@@ -14,7 +14,7 @@ module.exports = {
     ),
 
   async execute(interaction, client) {
-    // --- Guard: must be in a voice channel ---
+    //Guard: must be in a voice channel
     const memberVoice = interaction.member?.voice?.channel;
     if (!memberVoice) {
       return interaction.reply({
